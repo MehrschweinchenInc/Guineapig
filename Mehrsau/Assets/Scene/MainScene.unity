@@ -208,3 +208,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1522935578754774, guid: 694be41d2efad0b47b17738be51ed021,
     type: 2}
+--- !u!1001 &585429570
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4460433715228486, guid: ef10c1ccc270f9649b9f16b8e204469a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460433715228486, guid: ef10c1ccc270f9649b9f16b8e204469a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460433715228486, guid: ef10c1ccc270f9649b9f16b8e204469a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460433715228486, guid: ef10c1ccc270f9649b9f16b8e204469a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460433715228486, guid: ef10c1ccc270f9649b9f16b8e204469a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460433715228486, guid: ef10c1ccc270f9649b9f16b8e204469a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460433715228486, guid: ef10c1ccc270f9649b9f16b8e204469a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460433715228486, guid: ef10c1ccc270f9649b9f16b8e204469a, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ef10c1ccc270f9649b9f16b8e204469a, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &945522199 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1307198500694138, guid: ef10c1ccc270f9649b9f16b8e204469a,
+    type: 2}
+  m_PrefabInternal: {fileID: 585429570}
+--- !u!114 &945522200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 945522199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bed750f882bd1c48b65067fe785bad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveTime: 0.1
+  blockingLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  pointsPerWin: 100
+  rustleCount: 10
+  restartLevelDelay: 1
