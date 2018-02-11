@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 515036630}
   - component: {fileID: 515036629}
   - component: {fileID: 515036628}
+  - component: {fileID: 515036632}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -154,7 +155,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -194,72 +195,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &571714149
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 571714152}
-  - component: {fileID: 571714151}
-  - component: {fileID: 571714150}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &571714150
+--- !u!114 &515036632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 571714149}
+  m_GameObject: {fileID: 515036627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 402abb23434cb2140b1269b5bf8ba678, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c358d77dd9458c489cdf8d370886909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  columns: 8
-  rows: 5
-  wallCount:
-    minimum: 8
-    maximum: 8
-  guineapig: {fileID: 1235442941678520, guid: 78d65a76a9be0d344a3ae7148add9904, type: 2}
-  floorTiles:
-  - {fileID: 1254564597719564, guid: b2eea46426e75064b8c76c845e5ad2aa, type: 2}
-  wallTiles:
-  - {fileID: 1842481430680834, guid: 908d5843618ad3241b92cd2f540db941, type: 2}
-  - {fileID: 1059526188176468, guid: 6e6881b354c1ae04ebf2546fe37e29bf, type: 2}
-  - {fileID: 1554475753945348, guid: 4aed54cea8d7fa046a82f0dd05a389cb, type: 2}
-  outerWallTiles:
-  - {fileID: 1675288327136146, guid: c9a6dd8a606856d4e946167d71b49bc8, type: 2}
-  - {fileID: 1705742396779038, guid: 4827d5b8146a30941a6ca944e0c89664, type: 2}
-  - {fileID: 1382453455436906, guid: 78d18ca0518bb0349b15b729ec5208bd, type: 2}
---- !u!114 &571714151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 571714149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 640ed7c4bc452c24ab398dc2b2b9d369, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playersTurn: 1
---- !u!4 &571714152
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 571714149}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 3.5, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  gameManager: {fileID: 1522935578754774, guid: 694be41d2efad0b47b17738be51ed021,
+    type: 2}

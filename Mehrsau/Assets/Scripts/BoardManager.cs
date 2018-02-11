@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System;
-using System.Collections.Generic;
-using Random = UnityEngine.Random;
+using System.Collections.Generic;		//Allows us to use Lists.
+using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine random number generator.
+
+
+
 
 
 public class BoardManager : MonoBehaviour
@@ -27,16 +30,16 @@ public class BoardManager : MonoBehaviour
 
 	public int columns = 8;
 	//Number of columns in our game board.
-	public int rows = 5;
+	public int rows = 8;
 	//Number of rows in our game board.
-	public Count wallCount = new Count (8, 8);
+	public Count wallCount = new Count (5, 9);
 	//Lower and upper limit for our random number of walls per level.
-	public GameObject guineapig;
-	//Prefab to spawn for exit.
 	public GameObject[] floorTiles;
 	//Array of floor prefabs.
 	public GameObject[] wallTiles;
 	//Array of wall prefabs.
+	public GameObject[] guineaPigTile;
+	//Array für das Meerschweinchen damit wir layoutAtRandom nutzen können
 	public GameObject[] outerWallTiles;
 	//Array of outer tile prefabs.
 
@@ -145,7 +148,8 @@ public class BoardManager : MonoBehaviour
 		//Instantiate a random number of wall tiles based on minimum and maximum, at randomized positions.
 		LayoutObjectAtRandom (wallTiles, wallCount.minimum, wallCount.maximum);
 
-		//Instantiate the exit tile in the upper right hand corner of our game board
-		Instantiate (guineapig, RandomPosition(), Quaternion.identity);
+		//Instantiate the GuineaPig
+		LayoutObjectAtRandom (guineaPigTile, 1, 1);
+
 	}
 }
