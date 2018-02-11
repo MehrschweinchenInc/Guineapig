@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - GuineaPig
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -14,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - BlockingLayer
+  - 
   - 
   - 
   - 
@@ -41,13 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Floor
-    uniqueID: 4143039535
-    locked: 0
-  - name: Items
-    uniqueID: 4023052895
-    locked: 0
-  - name: Units
-    uniqueID: 445111983
     locked: 0
