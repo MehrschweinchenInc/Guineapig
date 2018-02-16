@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class mapGenerator : MonoBehaviour {
 
-	public int rows = 5;
-	public int colloms = 5;
+	public int rows = 10;
+	public int colloms = 10;
 
 	public GameObject outaWall;
 	public GameObject floor;
@@ -47,14 +47,18 @@ public class mapGenerator : MonoBehaviour {
 			Instantiate (stone, new Vector3 (Random.Range (0, rows) * spriteSize, Random.Range (0, colloms) * spriteSize, 0), Quaternion.identity);
 		}
 
-		//Mehrsau
+		//Mehrsau - denn mehr Sau ist besser als weniger!
 
 		Instantiate (mehrsau,new Vector3 (Random.Range (0, rows) * spriteSize, Random.Range (0, colloms) * spriteSize, 0), Quaternion.identity);
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Spiel wird beendet");
+            Application.Quit();
+        }
+    }
 }

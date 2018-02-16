@@ -18,6 +18,9 @@ public class triggerScript : MonoBehaviour {
 		if (other.tag == "GuineaPig") {
 			if (Input.GetKey (KeyCode.Space)) {
 				GameObject.Find ("Gewonnen").GetComponent<SpriteRenderer> ().enabled = true;
+                AudioSource audio = other.gameObject.GetComponent<AudioSource>();
+                audio.Play ();
+
 			}
 		}
 	}

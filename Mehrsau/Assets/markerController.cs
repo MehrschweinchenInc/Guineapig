@@ -20,16 +20,15 @@ public class markerController : MonoBehaviour {
 	}
 
 	public void mark(float dist){
-		print (dist);
-		if (dist <= 4) {
-			print ("klein");
+
+		if (dist <= 2) {
 			render.sprite = smallDist;
 		}
-		else if (dist <= 7) {
+		else if (dist <= 4) {
 			render.sprite = medDist;
 		}
 
-		else if (dist > 7) {
+		else if (dist > 4) {
 			render.sprite = BigDist;
 		}
 	}
