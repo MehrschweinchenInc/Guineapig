@@ -17,7 +17,7 @@ public class mapGenerator : MonoBehaviour {
 	private int stoneNumber;
 	
 
-	// Use this for initialization 
+ 
 	void Start () {
 		stoneNumber = 3;
 
@@ -31,7 +31,6 @@ public class mapGenerator : MonoBehaviour {
 		}
 
 		//Walls
-
 		for (int x = -1; x <= rows+1; x++) {
 			Instantiate (outaWall, new Vector3 (x * spriteSize, -spriteSize, 0),Quaternion.identity);
 			Instantiate (outaWall, new Vector3 (x * spriteSize, colloms * spriteSize + spriteSize, 0),Quaternion.identity);

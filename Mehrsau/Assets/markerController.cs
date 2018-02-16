@@ -9,12 +9,12 @@ public class markerController : MonoBehaviour {
 
 	private SpriteRenderer render;
 
-	// Use this for initialization
+
 	void Start () {
 		render = GetComponent<SpriteRenderer> ();
 	}
 	
-	// Update is called once per frame
+
 	void Update () {
 		
 	}
